@@ -45,8 +45,8 @@ To run the Neumorphic Calculator locally, follow these steps:
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
 
 ## Author
-**Abdulaziz Madatel**
-**GitHub:** akashikurokage28
+**Abdulaziz Madatel**  
+**GitHub:** akashikurokage28  
 **Email:** abdulazizmadatel@gmail.com
 
 ## License
