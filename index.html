@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="refresh" content="">
+   <title>Neumorphic Calculator</title>
+		<link rel="stylesheet" href="../css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="calcu-container">
+		<div class="calcu-wrapper">
+			<h1>NEUMORPHIC CALCULATOR</h1>
+			<!--INPUT/RESULT-->
+			<div class="calcu-input">
+				<input type="text" placeholder="0" id="input-result">
+			</div>
+
+			<!--BUTTONS-->
+			<div class="calcu-btns">
+
+				
+				<div class="btn-row">
+					<input type="button" name="all-clear" value="AC" onclick="allClear()">
+					<input type="button" name="percent" value="%" onclick="appendToInput('%')">
+					<input type="button" name="delete" value="DEL" onclick="deleteLastCharacter()">
+					<input type="button" name="divide" value="÷" onclick="appendToInput('÷')">
+				</div>
+
+				<div class="btn-row">
+					<input type="button" name="num-7" value="7" onclick="appendToInput('7')">
+					<input type="button" name="num-8" value="8" onclick="appendToInput('8')">
+					<input type="button" name="num-9" value="9" onclick="appendToInput('9')">
+					<input type="button" name="multiply" value="×" onclick="appendToInput('×')">
+				</div>
+
+				<div class="btn-row">
+					<input type="button" name="num-4" value="4" onclick="appendToInput('4')">
+					<input type="button" name="num-5" value="5" onclick="appendToInput('5')">
+					<input type="button" name="num-6" value="6" onclick="appendToInput('6')">
+					<input type="button" name="minus" value="-" onclick="appendToInput('-')">
+				</div>
+
+				<div class="btn-row">
+					<input type="button" name="num-1" value="1" onclick="appendToInput('1')">
+					<input type="button" name="num-2" value="2" onclick="appendToInput('2')">
+					<input type="button" name="num-3" value="3" onclick="appendToInput('3')">
+					<input type="button" name="plus" value="+" onclick="appendToInput('+')">
+				</div>
+
+				<div class="btn-row">
+					<input type="button" name="dbl-zero" value="00" onclick="appendToInput('00')">
+					<input type="button" name="zero" value="0" onclick="appendToInput('0')">
+					<input type="button" name="point" value="." onclick="appendToInput('.')">
+					<input type="button" name="equals" value="=" onclick="calculateResult()">
+				</div>
+			</div>
+
+			<!--DARK MODE BUTTON-->
+		<div class="dark-mode">
+			<p>Current Theme: <span class="theme-indicator">Light Mode</span></p>
+
+			<div class="btn-trail">
+				<button class="theme-btn"></button>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
